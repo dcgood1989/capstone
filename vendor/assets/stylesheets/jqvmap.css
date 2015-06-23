@@ -1,0 +1,107 @@
+#vmap {
+  width: 100%;
+  height: 600px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.jqvmap-label
+{
+  position: absolute;
+  display: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: silver;
+  font-family: sans-serif, Verdana;
+  font-size: smaller;
+}
+
+.jqvmap-region
+{
+  cursor: pointer;
+}
+.jqvmap-ajax_response
+{
+  width: 100%;
+  height: 500px;
+}
+
+body{ margin:0px; background:url(r_oh_yes.gif) fixed;}
+#prlx_1yr_1 {
+  position:fixed;
+  background: url(parallax_r_oh_yes.gif) no-repeat 0px 200px;
+  width: 100%;
+  height: 800px;
+}
+
+#content_layer{ position:absolute; }
+
+h1 {
+  font-weight: bold;
+}
+
+.img-square {
+  height:180px;
+  width:180px;
+  overflow:hidden;
+  padding-left: 5%;
+  padding-top: 10%;
+
+  color: #fff;
+}
+
+body {
+  background: image-url('gradient.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: 0px;
+  width: 100%;
+  font-family: 'ostrich';
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+
+.main {
+  width: 80%;
+  margin: -22px auto 0 auto;
+  text-align: center;
+  background: image-url("flagpole-mid.png");
+  background-repeat: repeat-y;
+  background-position: top left;
+  height: 200px;
+}
+
+.bottom {
+  width: 78.9%;
+  margin: -17px auto;
+  padding-top: -50px
+}
+
+.bottom .left {
+  float: left;
+  width: 200px;
+  height: 200px;
+  background: image-url("sasquatch.png");
+  background-repeat: no-repeat;
+  /*background-position: bottom left;*/
+}
+
+.bottom .right {
+  float: right;
+  width: 200px;
+  height: 200px;
+  background: image-url("ship.png");
+  background-repeat: no-repeat;
+  /*background-position: bottom right;*/
+}
+
+.popup {
+  height: 500px;
+  width: 300px;
+  border: bold
+}
