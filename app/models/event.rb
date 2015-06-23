@@ -1,3 +1,3 @@
-class Event < ActiveRecord::based
+class Event < ActiveRecord::Base
 
 end
