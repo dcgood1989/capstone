@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'maps#index'
   resources :events
   resources :states
+  resources :festivals
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

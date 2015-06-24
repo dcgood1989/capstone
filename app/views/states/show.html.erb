@@ -1,3 +1,71 @@
-<!-- <div class="container">
-  <h1> <%= "Festivals in " + @state.state_name %> </h1>
-</div> -->
+<div class="container">
+  <h1>
+    <center>
+      <%= "Festivals in " + @state.state_name %>
+    </center>
+  </h1>
+  <table border="1" style="width:100%">
+      <tr>
+        <td>
+          <h1>
+            <center>
+               NAME:
+            </center>
+         </h1>
+        </td>
+        <td>
+          <h1>
+            <center>
+              LOCATION:
+            </center>
+          </h1>
+        </td>
+        <td>
+          <h1>
+            <center>
+              DATES:
+            </center>
+          </h1>
+        </td>
+        <td>
+          <h1>
+            <center>
+              BANDS:
+            </center>
+          </h1>
+        </td>
+        <% @festivals.each do |festival| %>
+        <% if (@state.state_name == festival.state) %>
+      </tr>
+      <tr>
+        <td>
+          <h2>
+            <center>
+            <%=festival.name %>
+          </center>
+          </h2>
+        </td>
+        <td>
+          <h2>
+             <center>
+            <%= "#{festival.city}, #{festival.state}" %>
+          </center>
+          </h2>
+        </td>
+        <td>
+          <h2>
+            <center>
+            <%= "#{festival.start_date.strftime("%m/%d/%y")} to #{festival.end_date.strftime("%m/%d/%y")}"%>
+          </center>
+          </h2>
+        </td>
+        <td>
+          <center>
+            <%=  link_to "Bands", festival_path(festival), class: "btn btn-danger" %>
+          </center>
+        </td>
+      </tr>
+    <% end %>
+    <% end %>
+  </table>
+</div>

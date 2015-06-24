@@ -11,10 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150621225601) do
+ActiveRecord::Schema.define(version: 20150624023255) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "bands", force: :cascade do |t|
+    t.integer "festival_id"
+    t.string  "name"
+    t.string  "genre"
+    t.string  "website"
+  end
+
+  create_table "festivals", force: :cascade do |t|
+    t.string "name"
+    t.string "city"
+    t.string "state"
+    t.date   "start_date"
+    t.date   "end_date"
+    t.string "website"
+  end
 
   create_table "states", force: :cascade do |t|
     t.string "state_name"

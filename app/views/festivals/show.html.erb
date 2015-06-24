@@ -1,0 +1,60 @@
+<div class="container">
+  <h1>
+    <center>
+      <%= "BANDS AT #{@festival.name.upcase}"%>
+    </center>
+  </h1>
+
+  <table border="1" style="width:100%">
+      <tr>
+        <td>
+          <h1>
+            <center>
+              NAME:
+            </center>
+          </h1>
+        </td>
+        <td>
+          <h1>
+            <center>
+              GENRE:
+            </center>
+          </h1>
+        </td>
+        <td>
+          <h1>
+            <center>
+              BAND INFO:
+            </center>
+          </h1>
+        </td>
+      </tr>
+      <% @bands.each do |band| %>
+      <% if @festival.id == band.festival.id %>
+      <tr>
+        <td>
+          <h2>
+            <center>
+            <%= band.name %>
+            </center>
+          </h2>
+        </td>
+        <td>
+          <h2>
+            <center>
+              <%= band.genre %>
+            </center>
+          </h2>
+        </td>
+        <td>
+          <h2>
+            <center>
+              <%= link_to "Website", band.website, class: "btn btn-danger" %>
+            </center>
+          </h2>
+        </td>
+      </tr>
+    <% end %>
+    <% end %>
+  </table>
+</div
