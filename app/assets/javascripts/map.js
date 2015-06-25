@@ -12,7 +12,7 @@ $(document).ready(function() {
     borderWidth: 1,
     color: '#f4f3f0',
     enableZoom: true,
-    hoverColor: '#00000',
+    hoverColor: '#FF0000',
     hoverOpacity: null,
     normalizeFunction: 'linear',
     selectedColor: '#c9dfaf',
