@@ -4,7 +4,6 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'maps#index'
-  resources :events
   resources :states
   resources :festivals
   # Example of regular route:
